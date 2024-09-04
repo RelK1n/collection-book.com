@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+    .search-container input[type="text"] {
+        width: 100%;
+        max-width: 500px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        border-radius: 25px;
+        border: 2px solid #4CAF50;
+        outline: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        .search-container input[type="text"]:focus {
+            border-color: #388E3C;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.book-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+}
+
+    /* При наведении на всю карточку изменяем цвет текста */
+    .book-item:hover {
+        transform: scale(1.02);
+        background-color: #f0f0f0;
+    }
+
+        .book-item:hover a {
+            color: #4CAF50; /* Цвет текста при наведении */
+        }
+
+    .book-item a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: color 0.3s; /* Плавное изменение цвета */
+    }
+
+        .book-item a:hover {
+            color: #4CAF50; /* Цвет текста при наведении на ссылку */
+        }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
